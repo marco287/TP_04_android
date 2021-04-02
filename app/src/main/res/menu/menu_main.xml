@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sc.gestiononglets.MainActivity">
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/modeavion"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_baseline_flight_24"
+        android:title="@string/closeapp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/modeaviondesactivé"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_baseline_airplanemode_inactive_24"
+        android:title="@string/openapp"
+        app:showAsAction="ifRoom" />
+</menu>
+

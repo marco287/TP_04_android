@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gestion d\'une bande d\'onglets avec Fragments</string>
+    <string name="openapp">mode avion </string>
+    <string name="closeapp">mode avion désactivé</string>
+    <string name="action_settings">parametre</string>
+    <string name="titre_section0"> Minéraux </string>
+    <string name="titre_section1"> Végétaux </string>
+    <string name="titre_section2"> Animaux </string>
+</resources>
