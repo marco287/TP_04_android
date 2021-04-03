@@ -22,14 +22,14 @@ import com.example.gestiondunebandedongletsavecfragments.ui.main.SectionsPagerAd
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class MainActivity extends AppCompatActivity {
 
-    ViewPager viewpager;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager = findViewById(R.id.view_pager);
+        viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
@@ -65,15 +65,15 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.settings) {
-            Snackbar.make(viewpager,"setting",Snackbar.LENGTH_LONG).show();
+            Snackbar.make(viewPager,"setting",Snackbar.LENGTH_LONG).show();
             return true;
         }
         if (id == R.id.modeavion) {
-            Snackbar.make(viewpager, "setting", Snackbar.LENGTH_LONG).show();
+            Snackbar.make(viewPager, "mode avion", Snackbar.LENGTH_LONG).show();
             return true;
         }
         if (id == R.id.modeaviondesactivé) {
-            Snackbar.make(viewpager, "setting", Snackbar.LENGTH_LONG).show();
+            Snackbar.make(viewPager, "mode avion désactivé", Snackbar.LENGTH_LONG).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
